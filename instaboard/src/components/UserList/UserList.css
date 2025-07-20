@@ -1,0 +1,106 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+body,
+.user-list {
+  min-height: 100vh; 
+  background-color: #cac8c8;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark,
+.dark .user-list {
+  background-color: #000000;
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 550px;
+}
+.no-users {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.dark {
+  background-color: #2e2d2d;
+  color: #f0f0f0;
+}
+
+.dark .user-list {
+  background-color: #2e2d2d;
+}
+
+.dark .controls input {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+.dark .no-users {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.dark .controls button {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px ;
+   padding-bottom: 40px;
+  margin-top: 20px;
+}
+.action-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+  background-color: #b4bcc5;
+}
+
+.dark .action-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #797b7e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark .action-buttons button:hover {
+  background-color: #2a2b2c;
+}

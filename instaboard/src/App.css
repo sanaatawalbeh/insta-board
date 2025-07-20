@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.App-header {
+  padding: 16px 24px;
+  background-color: #cac8c8;
+  display: flex;
+  justify-content: space-between; /* يفصلهم لليسار واليمين */
+  align-items: center;
+  transition: background-color 0.3s;
+}
+.logo {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.dark .App-header {
+  background-color: #2e2d2d;
+}
+
+.App-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.dark .App-header h3 {
+  color: #f0f0f0;
+}
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #000; /* الوضع العادي (أسود) */
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+.App.dark .dark-toggle {
+  color: #fff; /* الوضع الداكن (أبيض) */
+}
+.dark-toggle:hover {
+  transform: scale(1.2);
+}
